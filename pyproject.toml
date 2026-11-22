@@ -1,0 +1,13 @@
+[project]
+name = "garmin-mcp-modal"
+version = "0.1.0"
+description = "Run Taxuspt/garmin_mcp on Modal as a remote MCP server"
+requires-python = "==3.12.*"
+license = "MIT"
+dependencies = ["garmin-mcp"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+garmin-mcp = { git = "https://github.com/Taxuspt/garmin_mcp", rev = "a2ca5fcac34524b83814fe2fcf3d479f8a75983f" }
